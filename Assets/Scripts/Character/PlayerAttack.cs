@@ -27,7 +27,7 @@ public class PlayerAttack : MonoBehaviour
     void Update(){
 		
 		//checks if the player has a weapon, can attack
-		if (unleashWeapon && !playerController.IsInteracting) {
+		if (unleashWeapon.UnleashingWeapon && !playerController.IsInteracting) {
 			if (Input.GetButtonDown("Fire1") && comboIndex < comboParams.Length)
 			{
 				Debug.Log(comboParams[comboIndex] + " triggered");

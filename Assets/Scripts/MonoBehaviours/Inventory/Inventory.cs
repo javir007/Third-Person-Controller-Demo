@@ -6,8 +6,7 @@ public class Inventory : MonoBehaviour
     public Image[] itemImages = new Image[numItemSlots];
     public Item[] items = new Item[numItemSlots];
 
-
-    public const int numItemSlots = 4;
+	public const int numItemSlots = 10;
 
 
     public void AddItem(Item itemToAdd)
